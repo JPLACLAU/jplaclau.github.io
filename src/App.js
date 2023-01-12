@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Proximamente sitio web de JPL</p>
+        <p>Próximamente sitio web de JPL</p>
         <a
           className="App-link"
           href="https://github.com/JPLACLAU"
