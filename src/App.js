@@ -1,23 +1,31 @@
 import logo from "./jplAvatar.svg";
 import "./App.css";
+import HomeDarkParticles from "./views/all-home-version/HomeDarkParticles";
+import React, { useEffect } from "react";
+import Routes from "./router/Routes";
+import ScrollToTop from "./components/ScrollToTop";
+import AnimatedCursor from "react-animated-cursor";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Próximamente sitio web de JPL</p>
-        <a
-          className="App-link"
-          href="https://github.com/JPLACLAU"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          JPL's Github
-        </a>
-      </header>
-    </div>
+    <>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={44}
+        color="75,255,165"
+        outerAlpha={0.3}
+        innerScale={0.7}
+        outerScale={1.4}
+      />
+      <ScrollToTop />
+      <Routes />
+    </>
   );
-}
+};
 
 export default App;
