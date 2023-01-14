@@ -8,7 +8,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "aos": "^2.3.4",
-    "gh-pages": "^4.0.0",
     "node-sass": "^6.0.0",
     "react": "^17.0.2",
     "react-animated-cursor": "^2.2.0",
@@ -59,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
